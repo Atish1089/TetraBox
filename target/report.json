@@ -1,0 +1,171 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author       :  TetraNoodle"
+      },
+      {
+        "line": 2,
+        "value": "#Scenario     :  Login and Logout from Box app"
+      },
+      {
+        "line": 3,
+        "value": "#Application  :  Box"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8130510868,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BoxLoginLogoutSteps.beforeScenario123(Scenario)"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Box Loginlogout negative scenario",
+        "description": "",
+        "id": "box-loginlogout;box-loginlogout-negative-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3206617525,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I want to navigate to box website",
+            "match": {
+              "location": "BoxLoginLogoutSteps.navigateToBox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23964627,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "page with title \"Box | Login\" should open",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Box | Login",
+                  "offset": 17
+                }
+              ],
+              "location": "BoxLoginLogoutSteps.veriifyPageTitle(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 127520441,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user enter \"abc@def.com\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc@def.com",
+                  "offset": 12
+                }
+              ],
+              "location": "BoxLoginLogoutSteps.enterUserName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2234020940,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Click on Next button",
+            "match": {
+              "location": "BoxLoginLogoutSteps.clickNext()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66719171,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User should be able to enter \"12345\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345",
+                  "offset": 30
+                }
+              ],
+              "location": "BoxLoginLogoutSteps.enterPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2474560313,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "BoxLoginLogoutSteps.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92813736,
+              "error_message": "org.junit.ComparisonFailure: Password not match expected:\u003c[Invalid ]Login Credentials\u003e but was:\u003c[]Login Credentials\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat com.stepDefinations.BoxLoginLogoutSteps.getErrorMessage(BoxLoginLogoutSteps.java:94)\r\n\tat ✽.Then error message \"Login Credentials\" is displayed(BoxLogin.feature:32)\r\n",
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "error message \"Login Credentials\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login Credentials",
+                  "offset": 15
+                }
+              ],
+              "location": "BoxLoginLogoutSteps.getErrorMessage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@login123"
+          }
+        ]
+      }
+    ],
+    "name": "Box loginlogout",
+    "description": "",
+    "id": "box-loginlogout",
+    "keyword": "Feature",
+    "uri": "BoxLogin.feature"
+  }
+]

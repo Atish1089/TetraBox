@@ -74,6 +74,7 @@ public class BoxLoginLogoutSteps {
 	@And("^user clicks on login button$")
 	public void clickLoginButton() {
 		bp.clickNext();
+		System.out.println("Hello");
 
 	}
 

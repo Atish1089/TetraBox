@@ -31,6 +31,7 @@ public class CreateFolderSteps {
 		wait.until(ExpectedConditions.attributeToBe(By.cssSelector("div[class=\"action-bar-create-buttons\"]"), "data-resin-feature", "createbuttons"));
 	    WebElement newoption= wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[aria-owns=\"menu-newdropdown\"]")));
          newoption.click();
+         System.out.println("Demo-Nipun");
 	}
 
 	@And("^click on new folder link$")
